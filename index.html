@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Web Components</h3>
+
+    <user-card
+      name="Mike Smith"
+      avatar="https://randomuser.me/api/portraits/men/2.jpg"
+    >
+      <div slot="email">mikesmith@gmail.com</div>
+      <div slot="phone">222-333-4444</div>
+    </user-card>
+
+    <user-card
+      name="Jane Black"
+      avatar="https://randomuser.me/api/portraits/women/2.jpg"
+    >
+      <div slot="email">janeblack@gmail.com</div>
+      <div slot="phone">444-555-6666</div>
+    </user-card>
+
+    <script src="userCard.js"></script>
+  </body>
+</html>
